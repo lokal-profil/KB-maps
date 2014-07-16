@@ -9,9 +9,10 @@
 #Notes
 #marccountry = marccountry.json
 #marcrelator = http://www.loc.gov/marc/relators/relacode.html
-#iso639-2b   = iso3692b.json
+#iso639-2b   = iso6392b.json
 
 #----------------------------------------------------------------------------------------
+import ujson
 from lxml import html, etree
 import requests
 
@@ -21,6 +22,12 @@ class KBHarvester(object):
         self.url = 'https://data.kb.se/datasets/2014/06/kartor/'
         self.credit = u'Kungliga_Biblioteket'
         self.items = {}
+        f = open('marccountry.json','r')
+        self.marccountry = ujson.load(f)
+        f.close()
+        f = open('iso6392b.json','r')
+        self.iso6392B = ujson.load(f)
+        f.close()
     
     def scraper(self):
         page = requests.get(self.url)
@@ -131,7 +138,7 @@ class KBHarvester(object):
                     for cchild in child.getchildren():
                         if cchild.tag[len(poo):] == 'placeTerm':
                             if cchild.attrib['type'] == 'code' and cchild.attrib['authority'] == 'marccountry':
-                                origin['placeCountry'] = cchild.text
+                                origin['placeCountry'] = self.marccountry[cchild.text]
                             elif cchild.attrib['type'] == 'text':
                                 origin['placeSub'] = cchild.text
                             else:
@@ -150,8 +157,11 @@ class KBHarvester(object):
             language = {'code':None, 'iso':None}
             for child in tag.getchildren():
                 if child.tag[len(poo):] == 'languageTerm' and child.attrib['type'] == 'code':
-                    language['iso'] = child.attrib['authority']
-                    language['code'] = child.text
+                    if child.attrib['authority'] == 'iso639-2b':
+                        language['code'] = self.iso6392B[child.text]
+                    else:
+                        language['iso'] = child.attrib['authority']
+                        language['code'] = child.text
                     languages.append(language)
                 else:
                     troubles.append("language/@%s %s is unhandled" %(child.attrib, child.tag[len(poo):]))
@@ -184,8 +194,7 @@ class KBHarvester(object):
                                     if coord_raw[i][:1] in ['e','n']: direction = 1
                                     elif coord_raw[i][:1] in ['w','v','s']: direction = -1 #for some reason v is also used
                                     else:
-                                        print "%s weird direction in coord: %s" %(librisId, ", ".join(coord_raw))
-                                        exit(1) #since this is serious shit
+                                        troubles.append("%s weird direction in coord: %s" %(librisId, ", ".join(coord_raw)))
                                     #convert to decimal
                                     bbox[i] = direction*(int(coord_raw[i][1:4]) + float(coord_raw[i][4:6])/60.0 + float(coord_raw[i][6:])/3600.0 )
                                 geospatial['bbox_dec'] = bbox
