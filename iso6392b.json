@@ -1,5 +1,8 @@
 {
-  "_comment": "ISO_639-2B codes. Source: https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes",
+  "@metadata": {
+    "description": "ISO_639-2B codes to (English) language names",
+    "source": "https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes"
+  },
   "aar": "Afar",
   "aav": "Austro-Asiatic languages",
   "abk": "Abkhazian",

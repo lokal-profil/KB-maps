@@ -1,5 +1,8 @@
 {
-  "_comment": "marccountry codes. Source: http://www.loc.gov/marc/countries/countries_code.html",
+  "@metadata": {
+    "description": "Marccountry codes to (English) country names",
+    "source": "http://www.loc.gov/marc/countries/countries_code.html"
+  },
   "aa": "Albania",
   "abc": "Alberta",
   "-ac": "Ashmore and Cartier Islands",
