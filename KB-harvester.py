@@ -520,21 +520,24 @@ class KBHarvester(object):
         """
         Given an ISO 639-2/B this returns the suitable output for Wiki
         """
-        if 'iso639-1' in self.iso6392B[code]:
+        if 'CLDR' in self.iso6392B[code]:
+            if not multiple:
+                return self.iso6392B[code]['CLDR']
+            else:
+                return u'{{#language:%s}}' %self.iso6392B[code]['CLDR']
+        elif 'iso639-1' in self.iso6392B[code]: #this occurs only for bih/bh
             if not multiple:
                 return self.iso6392B[code]['iso639-1']
             else:
                 return u'{{#language:%s}}' %self.iso6392B[code]['iso639-1']
-        elif self.iso6392B[code]['CLDR']:
-            if not multiple:
-                return code
-            else:
-                return u'{{#language:%s}}' %code
         else:
             return u"{{en|%s}}" %self.iso6392B[code]['en']
     
 #temp
 def tmpPrint(items, outfile):
+    """
+    Quick and dirty output to csv
+    """
     f=codecs.open(outfile,'w','utf-8')
     
     #set up order and header
@@ -569,15 +572,6 @@ def tmpPrint(items, outfile):
             vals.append(value.replace('\n','<!>').replace('|','!'))
         f.write('%s\n' %'|'.join(vals))
     f.close()
-
-def pretty(d, indent=0):
-    basic = u'  '
-    for key, value in d.iteritems():
-        print basic * indent + unicode(key)
-        if isinstance(value, dict):
-            pretty(value, indent+1)
-        else:
-            print basic * (indent+1) + unicode(value)
 
 if __name__ == '__main__':
     usage = """@TODO: Add usage instructions"""

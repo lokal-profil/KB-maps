@@ -1,2334 +1,2217 @@
 {
     "@metadata": {
-        "description": "Matches ISO 639-2/B codes to iso639-1 codes (if there is one); Checks if it is also a valid CLDR code; matches code the language name (in English)",
+        "description": "Matches ISO 639-2/B codes to ISO 639-1 and CLDR codes (if there is one); Also adds the language name (in English)", 
         "source": {
             "639-2/B to 639-1": "https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes", 
-            "ISO_639-2/B codes to (English) language names": "https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes",
-            "CLDR codes": "http://www.unicode.org/cldr/charts/25/summary/root.html"
-        }
+            "CLDR codes": "http://www.unicode.org/cldr/charts/25/summary/root.html", 
+            "ISO_639-2/B to language names": "https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes"
+        },
+        "updated": "2014-08-12"
     }, 
     "aar": {
-        "CLDR": false, 
+        "CLDR": "aa", 
         "eng": "Afar", 
         "iso639-1": "aa"
     }, 
     "aav": {
-        "CLDR": false, 
         "eng": "Austro-Asiatic languages"
     }, 
     "abk": {
-        "CLDR": false, 
+        "CLDR": "ab", 
         "eng": "Abkhazian", 
         "iso639-1": "ab"
     }, 
     "ace": {
-        "CLDR": true, 
+        "CLDR": "ace", 
         "eng": "Achinese"
     }, 
     "ach": {
-        "CLDR": true, 
+        "CLDR": "ach", 
         "eng": "Acoli"
     }, 
     "ada": {
-        "CLDR": true, 
+        "CLDR": "ada", 
         "eng": "Adangme"
     }, 
     "ady": {
-        "CLDR": true, 
+        "CLDR": "ady", 
         "eng": "Adyghe"
     }, 
     "afa": {
-        "CLDR": false, 
         "eng": "Afro-Asiatic languages"
     }, 
     "afh": {
-        "CLDR": true, 
+        "CLDR": "afh", 
         "eng": "Afrihili"
     }, 
     "afr": {
-        "CLDR": false, 
+        "CLDR": "af", 
         "eng": "Afrikaans", 
         "iso639-1": "af"
     }, 
     "ain": {
-        "CLDR": true, 
+        "CLDR": "ain", 
         "eng": "Ainu (Japan)"
     }, 
     "aka": {
-        "CLDR": false, 
+        "CLDR": "ak", 
         "eng": "Akan", 
         "iso639-1": "ak"
     }, 
     "akk": {
-        "CLDR": true, 
+        "CLDR": "akk", 
         "eng": "Akkadian"
     }, 
     "alb": {
-        "CLDR": false, 
+        "CLDR": "sq", 
         "eng": "Albanian", 
         "iso639-1": "sq"
     }, 
     "ale": {
-        "CLDR": true, 
+        "CLDR": "ale", 
         "eng": "Aleut"
     }, 
     "alg": {
-        "CLDR": false, 
         "eng": "Algonquian languages"
     }, 
     "alt": {
-        "CLDR": true, 
+        "CLDR": "alt", 
         "eng": "Southern Altai"
     }, 
     "alv": {
-        "CLDR": false, 
         "eng": "Atlantic-Congo languages"
     }, 
     "amh": {
-        "CLDR": false, 
+        "CLDR": "am", 
         "eng": "Amharic", 
         "iso639-1": "am"
     }, 
     "ang": {
-        "CLDR": true, 
+        "CLDR": "ang", 
         "eng": "Old English (ca. 450-1100)"
     }, 
     "anp": {
-        "CLDR": true, 
+        "CLDR": "anp", 
         "eng": "Angika"
     }, 
     "apa": {
-        "CLDR": false, 
         "eng": "Apache languages"
     }, 
     "aqa": {
-        "CLDR": false, 
         "eng": "Alacalufan languages"
     }, 
     "aql": {
-        "CLDR": false, 
         "eng": "Algic languages"
     }, 
     "ara": {
-        "CLDR": false, 
+        "CLDR": "ar", 
         "eng": "Arabic", 
         "iso639-1": "ar"
     }, 
     "arc": {
-        "CLDR": true, 
+        "CLDR": "arc", 
         "eng": "Official Aramaic (700-300 BCE)"
     }, 
     "arg": {
-        "CLDR": false, 
+        "CLDR": "an", 
         "eng": "Aragonese", 
         "iso639-1": "an"
     }, 
     "arm": {
-        "CLDR": false, 
+        "CLDR": "hy", 
         "eng": "Armenian", 
         "iso639-1": "hy"
     }, 
     "arn": {
-        "CLDR": true, 
+        "CLDR": "arn", 
         "eng": "Mapudungun"
     }, 
     "arp": {
-        "CLDR": true, 
+        "CLDR": "arp", 
         "eng": "Arapaho"
     }, 
     "art": {
-        "CLDR": false, 
         "eng": "Artificial languages"
     }, 
     "arw": {
-        "CLDR": true, 
+        "CLDR": "arw", 
         "eng": "Arawak"
     }, 
     "asm": {
-        "CLDR": false, 
+        "CLDR": "as", 
         "eng": "Assamese", 
         "iso639-1": "as"
     }, 
     "ast": {
-        "CLDR": true, 
+        "CLDR": "ast", 
         "eng": "Asturian"
     }, 
     "ath": {
-        "CLDR": false, 
         "eng": "Athapascan languages"
     }, 
     "auf": {
-        "CLDR": false, 
         "eng": "Arauan languages"
     }, 
     "aus": {
-        "CLDR": false, 
         "eng": "Australian languages"
     }, 
     "ava": {
-        "CLDR": false, 
+        "CLDR": "av", 
         "eng": "Avaric", 
         "iso639-1": "av"
     }, 
     "ave": {
-        "CLDR": false, 
+        "CLDR": "ae", 
         "eng": "Avestan", 
         "iso639-1": "ae"
     }, 
     "awa": {
-        "CLDR": true, 
+        "CLDR": "awa", 
         "eng": "Awadhi"
     }, 
     "awd": {
-        "CLDR": false, 
         "eng": "Arawakan languages"
     }, 
     "aym": {
-        "CLDR": false, 
+        "CLDR": "ay", 
         "eng": "Aymara", 
         "iso639-1": "ay"
     }, 
     "azc": {
-        "CLDR": false, 
         "eng": "Uto-Aztecan languages"
     }, 
     "aze": {
-        "CLDR": false, 
+        "CLDR": "az", 
         "eng": "Azerbaijani", 
         "iso639-1": "az"
     }, 
     "bad": {
-        "CLDR": false, 
         "eng": "Banda languages"
     }, 
     "bai": {
-        "CLDR": false, 
         "eng": "Bamileke languages"
     }, 
     "bak": {
-        "CLDR": false, 
+        "CLDR": "ba", 
         "eng": "Bashkir", 
         "iso639-1": "ba"
     }, 
     "bal": {
-        "CLDR": true, 
+        "CLDR": "bal", 
         "eng": "Baluchi"
     }, 
     "bam": {
-        "CLDR": false, 
+        "CLDR": "bm", 
         "eng": "Bambara", 
         "iso639-1": "bm"
     }, 
     "ban": {
-        "CLDR": true, 
+        "CLDR": "ban", 
         "eng": "Balinese"
     }, 
     "baq": {
-        "CLDR": false, 
+        "CLDR": "eu", 
         "eng": "Basque", 
         "iso639-1": "eu"
     }, 
     "bas": {
-        "CLDR": true, 
+        "CLDR": "bas", 
         "eng": "Basa (Cameroon)"
     }, 
     "bat": {
-        "CLDR": false, 
         "eng": "Baltic languages"
     }, 
     "bej": {
-        "CLDR": true, 
+        "CLDR": "bej", 
         "eng": "Beja"
     }, 
     "bel": {
-        "CLDR": false, 
+        "CLDR": "be", 
         "eng": "Belarusian", 
         "iso639-1": "be"
     }, 
     "bem": {
-        "CLDR": true, 
+        "CLDR": "bem", 
         "eng": "Bemba (Zambia)"
     }, 
     "ben": {
-        "CLDR": false, 
+        "CLDR": "bn", 
         "eng": "Bengali", 
         "iso639-1": "bn"
     }, 
     "ber": {
-        "CLDR": false, 
         "eng": "Berber languages"
     }, 
     "bho": {
-        "CLDR": true, 
+        "CLDR": "bho", 
         "eng": "Bhojpuri"
     }, 
     "bih": {
-        "CLDR": false, 
         "eng": "Bihari languages", 
         "iso639-1": "bh"
     }, 
     "bik": {
-        "CLDR": true, 
+        "CLDR": "bik", 
         "eng": "Bikol"
     }, 
     "bin": {
-        "CLDR": true, 
+        "CLDR": "bin", 
         "eng": "Bini"
     }, 
     "bis": {
-        "CLDR": false, 
+        "CLDR": "bi", 
         "eng": "Bislama", 
         "iso639-1": "bi"
     }, 
     "bla": {
-        "CLDR": true, 
+        "CLDR": "bla", 
         "eng": "Siksika"
     }, 
     "bnt": {
-        "CLDR": false, 
         "eng": "Bantu languages"
     }, 
     "bos": {
-        "CLDR": false, 
+        "CLDR": "bs", 
         "eng": "Bosnian", 
         "iso639-1": "bs"
     }, 
     "bra": {
-        "CLDR": true, 
+        "CLDR": "bra", 
         "eng": "Braj"
     }, 
     "bre": {
-        "CLDR": false, 
+        "CLDR": "br", 
         "eng": "Breton", 
         "iso639-1": "br"
     }, 
     "btk": {
-        "CLDR": false, 
         "eng": "Batak languages"
     }, 
     "bua": {
-        "CLDR": true, 
+        "CLDR": "bua", 
         "eng": "Buriat"
     }, 
     "bug": {
-        "CLDR": true, 
+        "CLDR": "bug", 
         "eng": "Buginese"
     }, 
     "bul": {
-        "CLDR": false, 
+        "CLDR": "bg", 
         "eng": "Bulgarian", 
         "iso639-1": "bg"
     }, 
     "bur": {
-        "CLDR": false, 
+        "CLDR": "my", 
         "eng": "Burmese", 
         "iso639-1": "my"
     }, 
     "byn": {
-        "CLDR": true, 
+        "CLDR": "byn", 
         "eng": "Bilin"
     }, 
     "cad": {
-        "CLDR": true, 
+        "CLDR": "cad", 
         "eng": "Caddo"
     }, 
     "cai": {
-        "CLDR": false, 
         "eng": "Central American Indian languages"
     }, 
     "car": {
-        "CLDR": true, 
+        "CLDR": "car", 
         "eng": "Galibi Carib"
     }, 
     "cat": {
-        "CLDR": false, 
+        "CLDR": "ca", 
         "eng": "Catalan", 
         "iso639-1": "ca"
     }, 
     "cau": {
-        "CLDR": false, 
         "eng": "Caucasian languages"
     }, 
     "cba": {
-        "CLDR": false, 
         "eng": "Chibchan languages"
     }, 
     "ccn": {
-        "CLDR": false, 
         "eng": "North Caucasian languages"
     }, 
     "ccs": {
-        "CLDR": false, 
         "eng": "South Caucasian languages"
     }, 
     "cdc": {
-        "CLDR": false, 
         "eng": "Chadic languages"
     }, 
     "cdd": {
-        "CLDR": false, 
         "eng": "Caddoan languages"
     }, 
     "ceb": {
-        "CLDR": true, 
+        "CLDR": "ceb", 
         "eng": "Cebuano"
     }, 
     "cel": {
-        "CLDR": false, 
         "eng": "Celtic languages"
     }, 
     "cha": {
-        "CLDR": false, 
+        "CLDR": "ch", 
         "eng": "Chamorro", 
         "iso639-1": "ch"
     }, 
     "chb": {
-        "CLDR": true, 
+        "CLDR": "chb", 
         "eng": "Chibcha"
     }, 
     "che": {
-        "CLDR": false, 
+        "CLDR": "ce", 
         "eng": "Chechen", 
         "iso639-1": "ce"
     }, 
     "chg": {
-        "CLDR": true, 
+        "CLDR": "chg", 
         "eng": "Chagatai"
     }, 
     "chi": {
-        "CLDR": false, 
+        "CLDR": "zh", 
         "eng": "Chinese", 
         "iso639-1": "zh"
     }, 
     "chk": {
-        "CLDR": true, 
+        "CLDR": "chk", 
         "eng": "Chuukese"
     }, 
     "chm": {
-        "CLDR": true, 
+        "CLDR": "chm", 
         "eng": "Mari (Russia)"
     }, 
     "chn": {
-        "CLDR": true, 
+        "CLDR": "chn", 
         "eng": "Chinook jargon"
     }, 
     "cho": {
-        "CLDR": true, 
+        "CLDR": "cho", 
         "eng": "Choctaw"
     }, 
     "chp": {
-        "CLDR": true, 
+        "CLDR": "chp", 
         "eng": "Chipewyan"
     }, 
     "chr": {
-        "CLDR": true, 
+        "CLDR": "chr", 
         "eng": "Cherokee"
     }, 
     "chu": {
-        "CLDR": false, 
+        "CLDR": "cu", 
         "eng": "Church Slavic", 
         "iso639-1": "cu"
     }, 
     "chv": {
-        "CLDR": false, 
+        "CLDR": "cv", 
         "eng": "Chuvash", 
         "iso639-1": "cv"
     }, 
     "chy": {
-        "CLDR": true, 
+        "CLDR": "chy", 
         "eng": "Cheyenne"
     }, 
     "cmc": {
-        "CLDR": false, 
         "eng": "Chamic languages"
     }, 
     "cop": {
-        "CLDR": true, 
+        "CLDR": "cop", 
         "eng": "Coptic"
     }, 
     "cor": {
-        "CLDR": false, 
+        "CLDR": "kw", 
         "eng": "Cornish", 
         "iso639-1": "kw"
     }, 
     "cos": {
-        "CLDR": false, 
+        "CLDR": "co", 
         "eng": "Corsican", 
         "iso639-1": "co"
     }, 
     "cpe": {
-        "CLDR": false, 
         "eng": "English based Creoles and pidgins"
     }, 
     "cpf": {
-        "CLDR": false, 
         "eng": "French-Based Creoles and pidgins"
     }, 
     "cpp": {
-        "CLDR": false, 
         "eng": "Portuguese-Based Creoles and pidgins"
     }, 
     "cre": {
-        "CLDR": false, 
+        "CLDR": "cr", 
         "eng": "Cree", 
         "iso639-1": "cr"
     }, 
     "crh": {
-        "CLDR": true, 
+        "CLDR": "crh", 
         "eng": "Crimean Tatar"
     }, 
     "crp": {
-        "CLDR": false, 
         "eng": "Creoles and pidgins"
     }, 
     "csb": {
-        "CLDR": true, 
+        "CLDR": "csb", 
         "eng": "Kashubian"
     }, 
     "csu": {
-        "CLDR": false, 
         "eng": "Central Sudanic languages"
     }, 
     "cus": {
-        "CLDR": false, 
         "eng": "Cushitic languages"
     }, 
     "cze": {
-        "CLDR": false, 
+        "CLDR": "cs", 
         "eng": "Czech", 
         "iso639-1": "cs"
     }, 
     "dak": {
-        "CLDR": true, 
+        "CLDR": "dak", 
         "eng": "Dakota"
     }, 
     "dan": {
-        "CLDR": false, 
+        "CLDR": "da", 
         "eng": "Danish", 
         "iso639-1": "da"
     }, 
     "dar": {
-        "CLDR": true, 
+        "CLDR": "dar", 
         "eng": "Dargwa"
     }, 
     "day": {
-        "CLDR": false, 
         "eng": "Land Dayak languages"
     }, 
     "del": {
-        "CLDR": true, 
+        "CLDR": "del", 
         "eng": "Delaware"
     }, 
     "den": {
-        "CLDR": true, 
+        "CLDR": "den", 
         "eng": "Slave (Athapascan)"
     }, 
     "dgr": {
-        "CLDR": true, 
+        "CLDR": "dgr", 
         "eng": "Dogrib"
     }, 
     "din": {
-        "CLDR": true, 
+        "CLDR": "din", 
         "eng": "Dinka"
     }, 
     "div": {
-        "CLDR": false, 
+        "CLDR": "dv", 
         "eng": "Dhivehi", 
         "iso639-1": "dv"
     }, 
     "dmn": {
-        "CLDR": false, 
         "eng": "Mande languages"
     }, 
     "doi": {
-        "CLDR": true, 
+        "CLDR": "doi", 
         "eng": "Dogri (macrolanguage)"
     }, 
     "dra": {
-        "CLDR": false, 
         "eng": "Dravidian languages"
     }, 
     "dsb": {
-        "CLDR": true, 
+        "CLDR": "dsb", 
         "eng": "Lower Sorbian"
     }, 
     "dua": {
-        "CLDR": true, 
+        "CLDR": "dua", 
         "eng": "Duala"
     }, 
     "dum": {
-        "CLDR": true, 
+        "CLDR": "dum", 
         "eng": "Middle Dutch (ca. 1050-1350)"
     }, 
     "dut": {
-        "CLDR": false, 
+        "CLDR": "nl", 
         "eng": "Dutch", 
         "iso639-1": "nl"
     }, 
     "dyu": {
-        "CLDR": true, 
+        "CLDR": "dyu", 
         "eng": "Dyula"
     }, 
     "dzo": {
-        "CLDR": false, 
+        "CLDR": "dz", 
         "eng": "Dzongkha", 
         "iso639-1": "dz"
     }, 
     "efi": {
-        "CLDR": true, 
+        "CLDR": "efi", 
         "eng": "Efik"
     }, 
     "egx": {
-        "CLDR": false, 
         "eng": "Egyptian languages"
     }, 
     "egy": {
-        "CLDR": true, 
+        "CLDR": "egy", 
         "eng": "Egyptian (Ancient)"
     }, 
     "eka": {
-        "CLDR": true, 
+        "CLDR": "eka", 
         "eng": "Ekajuk"
     }, 
     "elx": {
-        "CLDR": true, 
+        "CLDR": "elx", 
         "eng": "Elamite"
     }, 
     "eng": {
-        "CLDR": false, 
+        "CLDR": "en", 
         "eng": "English", 
         "iso639-1": "en"
     }, 
     "enm": {
-        "CLDR": true, 
+        "CLDR": "enm", 
         "eng": "Middle English (1100-1500)"
     }, 
     "epo": {
-        "CLDR": false, 
+        "CLDR": "eo", 
         "eng": "Esperanto", 
         "iso639-1": "eo"
     }, 
     "est": {
-        "CLDR": false, 
+        "CLDR": "et", 
         "eng": "Estonian", 
         "iso639-1": "et"
     }, 
     "esx": {
-        "CLDR": false, 
         "eng": "Eskimo-Aleut languages"
     }, 
     "euq": {
-        "CLDR": false, 
         "eng": "Basque (family)"
     }, 
     "ewe": {
-        "CLDR": false, 
+        "CLDR": "ee", 
         "eng": "Ewe", 
         "iso639-1": "ee"
     }, 
     "ewo": {
-        "CLDR": true, 
+        "CLDR": "ewo", 
         "eng": "Ewondo"
     }, 
     "fan": {
-        "CLDR": true, 
+        "CLDR": "fan", 
         "eng": "Fang (Equatorial Guinea)"
     }, 
     "fao": {
-        "CLDR": false, 
+        "CLDR": "fo", 
         "eng": "Faroese", 
         "iso639-1": "fo"
     }, 
     "fat": {
-        "CLDR": true, 
+        "CLDR": "fat", 
         "eng": "Fanti"
     }, 
     "fij": {
-        "CLDR": false, 
+        "CLDR": "fj", 
         "eng": "Fijian", 
         "iso639-1": "fj"
     }, 
     "fil": {
-        "CLDR": true, 
+        "CLDR": "fil", 
         "eng": "Filipino"
     }, 
     "fin": {
-        "CLDR": false, 
+        "CLDR": "fi", 
         "eng": "Finnish", 
         "iso639-1": "fi"
     }, 
     "fiu": {
-        "CLDR": false, 
         "eng": "Finno-Ugrian languages"
     }, 
     "fon": {
-        "CLDR": true, 
+        "CLDR": "fon", 
         "eng": "Fon"
     }, 
     "fox": {
-        "CLDR": false, 
         "eng": "Formosan languages"
     }, 
     "fre": {
-        "CLDR": false, 
+        "CLDR": "fr", 
         "eng": "French", 
         "iso639-1": "fr"
     }, 
     "frm": {
-        "CLDR": true, 
+        "CLDR": "frm", 
         "eng": "Middle French (ca. 1400-1600)"
     }, 
     "fro": {
-        "CLDR": true, 
+        "CLDR": "fro", 
         "eng": "Old French (842-ca. 1400)"
     }, 
     "frr": {
-        "CLDR": true, 
+        "CLDR": "frr", 
         "eng": "Northern Frisian"
     }, 
     "frs": {
-        "CLDR": true, 
+        "CLDR": "frs", 
         "eng": "Eastern Frisian"
     }, 
     "fry": {
-        "CLDR": false, 
+        "CLDR": "fy", 
         "eng": "Western Frisian", 
         "iso639-1": "fy"
     }, 
     "ful": {
-        "CLDR": false, 
+        "CLDR": "ff", 
         "eng": "Fulah", 
         "iso639-1": "ff"
     }, 
     "fur": {
-        "CLDR": true, 
+        "CLDR": "fur", 
         "eng": "Friulian"
     }, 
     "gaa": {
-        "CLDR": true, 
+        "CLDR": "gaa", 
         "eng": "Ga"
     }, 
     "gay": {
-        "CLDR": true, 
+        "CLDR": "gay", 
         "eng": "Gayo"
     }, 
     "gba": {
-        "CLDR": true, 
+        "CLDR": "gba", 
         "eng": "Gbaya (Central African Republic)"
     }, 
     "gem": {
-        "CLDR": false, 
         "eng": "Germanic languages"
     }, 
     "geo": {
-        "CLDR": false, 
+        "CLDR": "ka", 
         "eng": "Georgian", 
         "iso639-1": "ka"
     }, 
     "ger": {
-        "CLDR": false, 
+        "CLDR": "de", 
         "eng": "German", 
         "iso639-1": "de"
     }, 
     "gez": {
-        "CLDR": true, 
+        "CLDR": "gez", 
         "eng": "Geez"
     }, 
     "gil": {
-        "CLDR": true, 
+        "CLDR": "gil", 
         "eng": "Gilbertese"
     }, 
     "gla": {
-        "CLDR": false, 
+        "CLDR": "gd", 
         "eng": "Scottish Gaelic", 
         "iso639-1": "gd"
     }, 
     "gle": {
-        "CLDR": false, 
+        "CLDR": "ga", 
         "eng": "Irish", 
         "iso639-1": "ga"
     }, 
     "glg": {
-        "CLDR": false, 
+        "CLDR": "gl", 
         "eng": "Galician", 
         "iso639-1": "gl"
     }, 
     "glv": {
-        "CLDR": false, 
+        "CLDR": "gv", 
         "eng": "Manx", 
         "iso639-1": "gv"
     }, 
     "gme": {
-        "CLDR": false, 
         "eng": "East Germanic languages"
     }, 
     "gmh": {
-        "CLDR": true, 
+        "CLDR": "gmh", 
         "eng": "Middle High German (ca. 1050-1500)"
     }, 
     "gmq": {
-        "CLDR": false, 
         "eng": "North Germanic languages"
     }, 
     "gmw": {
-        "CLDR": false, 
         "eng": "West Germanic languages"
     }, 
     "goh": {
-        "CLDR": true, 
+        "CLDR": "goh", 
         "eng": "Old High German (ca. 750-1050)"
     }, 
     "gon": {
-        "CLDR": true, 
+        "CLDR": "gon", 
         "eng": "Gondi"
     }, 
     "gor": {
-        "CLDR": true, 
+        "CLDR": "gor", 
         "eng": "Gorontalo"
     }, 
     "got": {
-        "CLDR": true, 
+        "CLDR": "got", 
         "eng": "Gothic"
     }, 
     "grb": {
-        "CLDR": true, 
+        "CLDR": "grb", 
         "eng": "Grebo"
     }, 
     "grc": {
-        "CLDR": true, 
+        "CLDR": "grc", 
         "eng": "Ancient Greek (to 1453)"
     }, 
     "gre": {
-        "CLDR": false, 
+        "CLDR": "el", 
         "eng": "Modern Greek (1453-)", 
         "iso639-1": "el"
     }, 
     "grk": {
-        "CLDR": false, 
         "eng": "Greek languages"
     }, 
     "grn": {
-        "CLDR": false, 
+        "CLDR": "gn", 
         "eng": "Guarani", 
         "iso639-1": "gn"
     }, 
     "gsw": {
-        "CLDR": true, 
+        "CLDR": "gsw", 
         "eng": "Swiss German"
     }, 
     "guj": {
-        "CLDR": false, 
+        "CLDR": "gu", 
         "eng": "Gujarati", 
         "iso639-1": "gu"
     }, 
     "gwi": {
-        "CLDR": true, 
+        "CLDR": "gwi", 
         "eng": "Gwich\u02bcin"
     }, 
     "hai": {
-        "CLDR": true, 
+        "CLDR": "hai", 
         "eng": "Haida"
     }, 
     "hat": {
-        "CLDR": false, 
+        "CLDR": "ht", 
         "eng": "Haitian", 
         "iso639-1": "ht"
     }, 
     "hau": {
-        "CLDR": false, 
+        "CLDR": "ha", 
         "eng": "Hausa", 
         "iso639-1": "ha"
     }, 
     "haw": {
-        "CLDR": true, 
+        "CLDR": "haw", 
         "eng": "Hawaiian"
     }, 
     "heb": {
-        "CLDR": false, 
+        "CLDR": "he", 
         "eng": "Hebrew", 
         "iso639-1": "he"
     }, 
     "her": {
-        "CLDR": false, 
+        "CLDR": "hz", 
         "eng": "Herero", 
         "iso639-1": "hz"
     }, 
     "hil": {
-        "CLDR": true, 
+        "CLDR": "hil", 
         "eng": "Hiligaynon"
     }, 
     "him": {
-        "CLDR": false, 
         "eng": "Himachali languages"
     }, 
     "hin": {
-        "CLDR": false, 
+        "CLDR": "hi", 
         "eng": "Hindi", 
         "iso639-1": "hi"
     }, 
     "hit": {
-        "CLDR": true, 
+        "CLDR": "hit", 
         "eng": "Hittite"
     }, 
     "hmn": {
-        "CLDR": true, 
+        "CLDR": "hmn", 
         "eng": "Hmong"
     }, 
     "hmo": {
-        "CLDR": false, 
+        "CLDR": "ho", 
         "eng": "Hiri Motu", 
         "iso639-1": "ho"
     }, 
     "hmx": {
-        "CLDR": false, 
         "eng": "Hmong-Mien languages"
     }, 
     "hok": {
-        "CLDR": false, 
         "eng": "Hokan languages"
     }, 
     "hrv": {
-        "CLDR": false, 
+        "CLDR": "hr", 
         "eng": "Croatian", 
         "iso639-1": "hr"
     }, 
     "hsb": {
-        "CLDR": true, 
+        "CLDR": "hsb", 
         "eng": "Upper Sorbian"
     }, 
     "hun": {
-        "CLDR": false, 
+        "CLDR": "hu", 
         "eng": "Hungarian", 
         "iso639-1": "hu"
     }, 
     "hup": {
-        "CLDR": true, 
+        "CLDR": "hup", 
         "eng": "Hupa"
     }, 
     "hyx": {
-        "CLDR": false, 
         "eng": "Armenian (family)"
     }, 
     "iba": {
-        "CLDR": true, 
+        "CLDR": "iba", 
         "eng": "Iban"
     }, 
     "ibo": {
-        "CLDR": false, 
+        "CLDR": "ig", 
         "eng": "Igbo", 
         "iso639-1": "ig"
     }, 
     "ice": {
-        "CLDR": false, 
+        "CLDR": "is", 
         "eng": "Icelandic", 
         "iso639-1": "is"
     }, 
     "ido": {
-        "CLDR": false, 
+        "CLDR": "io", 
         "eng": "Ido", 
         "iso639-1": "io"
     }, 
     "iii": {
-        "CLDR": false, 
+        "CLDR": "ii", 
         "eng": "Sichuan Yi", 
         "iso639-1": "ii"
     }, 
     "iir": {
-        "CLDR": false, 
         "eng": "Indo-Iranian languages"
     }, 
     "ijo": {
-        "CLDR": false, 
         "eng": "Ijo languages"
     }, 
     "iku": {
-        "CLDR": false, 
+        "CLDR": "iu", 
         "eng": "Inuktitut", 
         "iso639-1": "iu"
     }, 
     "ile": {
-        "CLDR": false, 
+        "CLDR": "ie", 
         "eng": "Interlingue", 
         "iso639-1": "ie"
     }, 
     "ilo": {
-        "CLDR": true, 
+        "CLDR": "ilo", 
         "eng": "Iloko"
     }, 
     "ina": {
-        "CLDR": false, 
+        "CLDR": "ia", 
         "eng": "Interlingua (International Auxiliary Language Association)", 
         "iso639-1": "ia"
     }, 
     "inc": {
-        "CLDR": false, 
         "eng": "Indic languages"
     }, 
     "ind": {
-        "CLDR": false, 
+        "CLDR": "id", 
         "eng": "Indonesian", 
         "iso639-1": "id"
     }, 
     "ine": {
-        "CLDR": false, 
         "eng": "Indo-European languages"
     }, 
     "inh": {
-        "CLDR": true, 
+        "CLDR": "inh", 
         "eng": "Ingush"
     }, 
     "ipk": {
-        "CLDR": false, 
+        "CLDR": "ik", 
         "eng": "Inupiaq", 
         "iso639-1": "ik"
     }, 
     "ira": {
-        "CLDR": false, 
         "eng": "Iranian languages"
     }, 
     "iro": {
-        "CLDR": false, 
         "eng": "Iroquoian languages"
     }, 
     "ita": {
-        "CLDR": false, 
+        "CLDR": "it", 
         "eng": "Italian", 
         "iso639-1": "it"
     }, 
     "itc": {
-        "CLDR": false, 
         "eng": "Italic languages"
     }, 
     "jav": {
-        "CLDR": false, 
+        "CLDR": "jv", 
         "eng": "Javanese", 
         "iso639-1": "jv"
     }, 
     "jbo": {
-        "CLDR": true, 
+        "CLDR": "jbo", 
         "eng": "Lojban"
     }, 
     "jpn": {
-        "CLDR": false, 
+        "CLDR": "ja", 
         "eng": "Japanese", 
         "iso639-1": "ja"
     }, 
     "jpr": {
-        "CLDR": true, 
+        "CLDR": "jpr", 
         "eng": "Judeo-Persian"
     }, 
     "jpx": {
-        "CLDR": false, 
         "eng": "Japanese (family)"
     }, 
     "jrb": {
-        "CLDR": true, 
+        "CLDR": "jrb", 
         "eng": "Judeo-Arabic"
     }, 
     "kaa": {
-        "CLDR": true, 
+        "CLDR": "kaa", 
         "eng": "Kara-Kalpak"
     }, 
     "kab": {
-        "CLDR": true, 
+        "CLDR": "kab", 
         "eng": "Kabyle"
     }, 
     "kac": {
-        "CLDR": true, 
+        "CLDR": "kac", 
         "eng": "Kachin"
     }, 
     "kal": {
-        "CLDR": false, 
+        "CLDR": "kl", 
         "eng": "Kalaallisut", 
         "iso639-1": "kl"
     }, 
     "kam": {
-        "CLDR": true, 
+        "CLDR": "kam", 
         "eng": "Kamba (Kenya)"
     }, 
     "kan": {
-        "CLDR": false, 
+        "CLDR": "kn", 
         "eng": "Kannada", 
         "iso639-1": "kn"
     }, 
     "kar": {
-        "CLDR": false, 
         "eng": "Karen languages"
     }, 
     "kas": {
-        "CLDR": false, 
+        "CLDR": "ks", 
         "eng": "Kashmiri", 
         "iso639-1": "ks"
     }, 
     "kau": {
-        "CLDR": false, 
+        "CLDR": "kr", 
         "eng": "Kanuri", 
         "iso639-1": "kr"
     }, 
     "kaw": {
-        "CLDR": true, 
+        "CLDR": "kaw", 
         "eng": "Kawi"
     }, 
     "kaz": {
-        "CLDR": false, 
+        "CLDR": "kk", 
         "eng": "Kazakh", 
         "iso639-1": "kk"
     }, 
     "kbd": {
-        "CLDR": true, 
+        "CLDR": "kbd", 
         "eng": "Kabardian"
     }, 
     "kdo": {
-        "CLDR": false, 
         "eng": "Kordofanian languages"
     }, 
     "kha": {
-        "CLDR": true, 
+        "CLDR": "kha", 
         "eng": "Khasi"
     }, 
     "khi": {
-        "CLDR": false, 
         "eng": "Khoisan languages"
     }, 
     "khm": {
-        "CLDR": false, 
+        "CLDR": "km", 
         "eng": "Central Khmer", 
         "iso639-1": "km"
     }, 
     "kho": {
-        "CLDR": true, 
+        "CLDR": "kho", 
         "eng": "Khotanese"
     }, 
     "kik": {
-        "CLDR": false, 
+        "CLDR": "ki", 
         "eng": "Kikuyu", 
         "iso639-1": "ki"
     }, 
     "kin": {
-        "CLDR": false, 
+        "CLDR": "rw", 
         "eng": "Kinyarwanda", 
         "iso639-1": "rw"
     }, 
     "kir": {
-        "CLDR": false, 
+        "CLDR": "ky", 
         "eng": "Kirghiz", 
         "iso639-1": "ky"
     }, 
     "kmb": {
-        "CLDR": true, 
+        "CLDR": "kmb", 
         "eng": "Kimbundu"
     }, 
     "kok": {
-        "CLDR": true, 
+        "CLDR": "kok", 
         "eng": "Konkani (macrolanguage)"
     }, 
     "kom": {
-        "CLDR": false, 
+        "CLDR": "kv", 
         "eng": "Komi", 
         "iso639-1": "kv"
     }, 
     "kon": {
-        "CLDR": false, 
+        "CLDR": "kg", 
         "eng": "Kongo", 
         "iso639-1": "kg"
     }, 
     "kor": {
-        "CLDR": false, 
+        "CLDR": "ko", 
         "eng": "Korean", 
         "iso639-1": "ko"
     }, 
     "kos": {
-        "CLDR": true, 
+        "CLDR": "kos", 
         "eng": "Kosraean"
     }, 
     "kpe": {
-        "CLDR": true, 
+        "CLDR": "kpe", 
         "eng": "Kpelle"
     }, 
     "krc": {
-        "CLDR": true, 
+        "CLDR": "krc", 
         "eng": "Karachay-Balkar"
     }, 
     "krl": {
-        "CLDR": true, 
+        "CLDR": "krl", 
         "eng": "Karelian"
     }, 
     "kro": {
-        "CLDR": false, 
         "eng": "Kru languages"
     }, 
     "kru": {
-        "CLDR": true, 
+        "CLDR": "kru", 
         "eng": "Kurukh"
     }, 
     "kua": {
-        "CLDR": false, 
+        "CLDR": "kj", 
         "eng": "Kuanyama", 
         "iso639-1": "kj"
     }, 
     "kum": {
-        "CLDR": true, 
+        "CLDR": "kum", 
         "eng": "Kumyk"
     }, 
     "kur": {
-        "CLDR": false, 
+        "CLDR": "ku", 
         "eng": "Kurdish", 
         "iso639-1": "ku"
     }, 
     "kut": {
-        "CLDR": true, 
+        "CLDR": "kut", 
         "eng": "Kutenai"
     }, 
     "lad": {
-        "CLDR": true, 
+        "CLDR": "lad", 
         "eng": "Ladino"
     }, 
     "lah": {
-        "CLDR": true, 
+        "CLDR": "lah", 
         "eng": "Lahnda"
     }, 
     "lam": {
-        "CLDR": true, 
+        "CLDR": "lam", 
         "eng": "Lamba"
     }, 
     "lao": {
-        "CLDR": false, 
+        "CLDR": "lo", 
         "eng": "Lao", 
         "iso639-1": "lo"
     }, 
     "lat": {
-        "CLDR": false, 
+        "CLDR": "la", 
         "eng": "Latin", 
         "iso639-1": "la"
     }, 
     "lav": {
-        "CLDR": false, 
+        "CLDR": "lv", 
         "eng": "Latvian", 
         "iso639-1": "lv"
     }, 
     "lez": {
-        "CLDR": true, 
+        "CLDR": "lez", 
         "eng": "Lezghian"
     }, 
     "lim": {
-        "CLDR": false, 
+        "CLDR": "li", 
         "eng": "Limburgan", 
         "iso639-1": "li"
     }, 
     "lin": {
-        "CLDR": false, 
+        "CLDR": "ln", 
         "eng": "Lingala", 
         "iso639-1": "ln"
     }, 
     "lit": {
-        "CLDR": false, 
+        "CLDR": "lt", 
         "eng": "Lithuanian", 
         "iso639-1": "lt"
     }, 
     "lol": {
-        "CLDR": true, 
+        "CLDR": "lol", 
         "eng": "Mongo"
     }, 
     "loz": {
-        "CLDR": true, 
+        "CLDR": "loz", 
         "eng": "Lozi"
     }, 
     "ltz": {
-        "CLDR": false, 
+        "CLDR": "lb", 
         "eng": "Luxembourgish", 
         "iso639-1": "lb"
     }, 
     "lua": {
-        "CLDR": true, 
+        "CLDR": "lua", 
         "eng": "Luba-Lulua"
     }, 
     "lub": {
-        "CLDR": false, 
+        "CLDR": "lu", 
         "eng": "Luba-Katanga", 
         "iso639-1": "lu"
     }, 
     "lug": {
-        "CLDR": false, 
+        "CLDR": "lg", 
         "eng": "Ganda", 
         "iso639-1": "lg"
     }, 
     "lui": {
-        "CLDR": true, 
+        "CLDR": "lui", 
         "eng": "Luiseno"
     }, 
     "lun": {
-        "CLDR": true, 
+        "CLDR": "lun", 
         "eng": "Lunda"
     }, 
     "luo": {
-        "CLDR": true, 
+        "CLDR": "luo", 
         "eng": "Luo (Kenya and Tanzania)"
     }, 
     "lus": {
-        "CLDR": true, 
+        "CLDR": "lus", 
         "eng": "Lushai"
     }, 
     "mac": {
-        "CLDR": false, 
+        "CLDR": "mk", 
         "eng": "Macedonian", 
         "iso639-1": "mk"
     }, 
     "mad": {
-        "CLDR": true, 
+        "CLDR": "mad", 
         "eng": "Madurese"
     }, 
     "mag": {
-        "CLDR": true, 
+        "CLDR": "mag", 
         "eng": "Magahi"
     }, 
     "mah": {
-        "CLDR": false, 
+        "CLDR": "mh", 
         "eng": "Marshallese", 
         "iso639-1": "mh"
     }, 
     "mai": {
-        "CLDR": true, 
+        "CLDR": "mai", 
         "eng": "Maithili"
     }, 
     "mak": {
-        "CLDR": true, 
+        "CLDR": "mak", 
         "eng": "Makasar"
     }, 
     "mal": {
-        "CLDR": false, 
+        "CLDR": "ml", 
         "eng": "Malayalam", 
         "iso639-1": "ml"
     }, 
     "man": {
-        "CLDR": true, 
+        "CLDR": "man", 
         "eng": "Mandingo"
     }, 
     "mao": {
-        "CLDR": false, 
+        "CLDR": "mi", 
         "eng": "Maori", 
         "iso639-1": "mi"
     }, 
     "map": {
-        "CLDR": false, 
         "eng": "Austronesian languages"
     }, 
     "mar": {
-        "CLDR": false, 
+        "CLDR": "mr", 
         "eng": "Marathi", 
         "iso639-1": "mr"
     }, 
     "mas": {
-        "CLDR": true, 
+        "CLDR": "mas", 
         "eng": "Masai"
     }, 
     "may": {
-        "CLDR": false, 
+        "CLDR": "ms", 
         "eng": "Malay (macrolanguage)", 
         "iso639-1": "ms"
     }, 
     "mdf": {
-        "CLDR": true, 
+        "CLDR": "mdf", 
         "eng": "Moksha"
     }, 
     "mdr": {
-        "CLDR": true, 
+        "CLDR": "mdr", 
         "eng": "Mandar"
     }, 
     "men": {
-        "CLDR": true, 
+        "CLDR": "men", 
         "eng": "Mende (Sierra Leone)"
     }, 
     "mga": {
-        "CLDR": true, 
+        "CLDR": "mga", 
         "eng": "Middle Irish (900-1200)"
     }, 
     "mic": {
-        "CLDR": true, 
+        "CLDR": "mic", 
         "eng": "Mi'kmaq"
     }, 
     "min": {
-        "CLDR": true, 
+        "CLDR": "min", 
         "eng": "Minangkabau"
     }, 
     "mis": {
-        "CLDR": false, 
         "eng": "Uncoded languages"
     }, 
     "mkh": {
-        "CLDR": false, 
         "eng": "Mon-Khmer languages"
     }, 
     "mlg": {
-        "CLDR": false, 
+        "CLDR": "mg", 
         "eng": "Malagasy", 
         "iso639-1": "mg"
     }, 
     "mlt": {
-        "CLDR": false, 
+        "CLDR": "mt", 
         "eng": "Maltese", 
         "iso639-1": "mt"
     }, 
     "mnc": {
-        "CLDR": true, 
+        "CLDR": "mnc", 
         "eng": "Manchu"
     }, 
     "mni": {
-        "CLDR": true, 
+        "CLDR": "mni", 
         "eng": "Manipuri"
     }, 
     "mno": {
-        "CLDR": false, 
         "eng": "Manobo languages"
     }, 
     "moh": {
-        "CLDR": true, 
+        "CLDR": "moh", 
         "eng": "Mohawk"
     }, 
     "mon": {
-        "CLDR": false, 
+        "CLDR": "mn", 
         "eng": "Mongolian", 
         "iso639-1": "mn"
     }, 
     "mos": {
-        "CLDR": true, 
+        "CLDR": "mos", 
         "eng": "Mossi"
     }, 
     "mul": {
-        "CLDR": true, 
+        "CLDR": "mul", 
         "eng": "Multiple languages"
     }, 
     "mun": {
-        "CLDR": false, 
         "eng": "Munda languages"
     }, 
     "mus": {
-        "CLDR": true, 
+        "CLDR": "mus", 
         "eng": "Creek"
     }, 
     "mwl": {
-        "CLDR": true, 
+        "CLDR": "mwl", 
         "eng": "Mirandese"
     }, 
     "mwr": {
-        "CLDR": true, 
+        "CLDR": "mwr", 
         "eng": "Marwari"
     }, 
     "myn": {
-        "CLDR": false, 
         "eng": "Mayan languages"
     }, 
     "myv": {
-        "CLDR": true, 
+        "CLDR": "myv", 
         "eng": "Erzya"
     }, 
     "nah": {
-        "CLDR": false, 
         "eng": "Nahuatl languages"
     }, 
     "nai": {
-        "CLDR": false, 
         "eng": "North American Indian"
     }, 
     "nap": {
-        "CLDR": true, 
+        "CLDR": "nap", 
         "eng": "Neapolitan"
     }, 
     "nau": {
-        "CLDR": false, 
+        "CLDR": "na", 
         "eng": "Nauru", 
         "iso639-1": "na"
     }, 
     "nav": {
-        "CLDR": false, 
+        "CLDR": "nv", 
         "eng": "Navajo", 
         "iso639-1": "nv"
     }, 
     "nbl": {
-        "CLDR": false, 
+        "CLDR": "nr", 
         "eng": "South Ndebele", 
         "iso639-1": "nr"
     }, 
     "nde": {
-        "CLDR": false, 
+        "CLDR": "nd", 
         "eng": "North Ndebele", 
         "iso639-1": "nd"
     }, 
     "ndo": {
-        "CLDR": false, 
+        "CLDR": "ng", 
         "eng": "Ndonga", 
         "iso639-1": "ng"
     }, 
     "nds": {
-        "CLDR": true, 
+        "CLDR": "nds", 
         "eng": "Low German"
     }, 
     "nep": {
-        "CLDR": false, 
+        "CLDR": "ne", 
         "eng": "Nepali (macrolanguage)", 
         "iso639-1": "ne"
     }, 
     "new": {
-        "CLDR": true, 
+        "CLDR": "new", 
         "eng": "Newari"
     }, 
     "ngf": {
-        "CLDR": false, 
         "eng": "Trans-New Guinea languages"
     }, 
     "nia": {
-        "CLDR": true, 
+        "CLDR": "nia", 
         "eng": "Nias"
     }, 
     "nic": {
-        "CLDR": false, 
         "eng": "Niger-Kordofanian languages"
     }, 
     "niu": {
-        "CLDR": true, 
+        "CLDR": "niu", 
         "eng": "Niuean"
     }, 
     "nno": {
-        "CLDR": false, 
+        "CLDR": "nn", 
         "eng": "Norwegian Nynorsk", 
         "iso639-1": "nn"
     }, 
     "nob": {
-        "CLDR": false, 
+        "CLDR": "nb", 
         "eng": "Norwegian Bokm\u00e5l", 
         "iso639-1": "nb"
     }, 
     "nog": {
-        "CLDR": true, 
+        "CLDR": "nog", 
         "eng": "Nogai"
     }, 
     "non": {
-        "CLDR": true, 
+        "CLDR": "non", 
         "eng": "Old Norse"
     }, 
     "nor": {
-        "CLDR": false, 
+        "CLDR": "no", 
         "eng": "Norwegian", 
         "iso639-1": "no"
     }, 
     "nqo": {
-        "CLDR": true, 
+        "CLDR": "nqo", 
         "eng": "N'Ko"
     }, 
     "nso": {
-        "CLDR": true, 
+        "CLDR": "nso", 
         "eng": "Pedi"
     }, 
     "nub": {
-        "CLDR": false, 
         "eng": "Nubian languages"
     }, 
     "nwc": {
-        "CLDR": true, 
+        "CLDR": "nwc", 
         "eng": "Classical Newari"
     }, 
     "nya": {
-        "CLDR": false, 
+        "CLDR": "ny", 
         "eng": "Nyanja", 
         "iso639-1": "ny"
     }, 
     "nym": {
-        "CLDR": true, 
+        "CLDR": "nym", 
         "eng": "Nyamwezi"
     }, 
     "nyn": {
-        "CLDR": true, 
+        "CLDR": "nyn", 
         "eng": "Nyankole"
     }, 
     "nyo": {
-        "CLDR": true, 
+        "CLDR": "nyo", 
         "eng": "Nyoro"
     }, 
     "nzi": {
-        "CLDR": true, 
+        "CLDR": "nzi", 
         "eng": "Nzima"
     }, 
     "oci": {
-        "CLDR": false, 
+        "CLDR": "oc", 
         "eng": "Occitan (post 1500)", 
         "iso639-1": "oc"
     }, 
     "oji": {
-        "CLDR": false, 
+        "CLDR": "oj", 
         "eng": "Ojibwa", 
         "iso639-1": "oj"
     }, 
     "omq": {
-        "CLDR": false, 
         "eng": "Oto-Manguean languages"
     }, 
     "omv": {
-        "CLDR": false, 
         "eng": "Omotic languages"
     }, 
     "ori": {
-        "CLDR": false, 
+        "CLDR": "or", 
         "eng": "Oriya (macrolanguage)", 
         "iso639-1": "or"
     }, 
     "orm": {
-        "CLDR": false, 
+        "CLDR": "om", 
         "eng": "Oromo", 
         "iso639-1": "om"
     }, 
     "osa": {
-        "CLDR": true, 
+        "CLDR": "osa", 
         "eng": "Osage"
     }, 
     "oss": {
-        "CLDR": false, 
+        "CLDR": "os", 
         "eng": "Ossetian", 
         "iso639-1": "os"
     }, 
     "ota": {
-        "CLDR": true, 
+        "CLDR": "ota", 
         "eng": "Ottoman Turkish (1500-1928)"
     }, 
     "oto": {
-        "CLDR": false, 
         "eng": "Otomian languages"
     }, 
     "paa": {
-        "CLDR": false, 
         "eng": "Papuan languages"
     }, 
     "pag": {
-        "CLDR": true, 
+        "CLDR": "pag", 
         "eng": "Pangasinan"
     }, 
     "pal": {
-        "CLDR": true, 
+        "CLDR": "pal", 
         "eng": "Pahlavi"
     }, 
     "pam": {
-        "CLDR": true, 
+        "CLDR": "pam", 
         "eng": "Pampanga"
     }, 
     "pan": {
-        "CLDR": false, 
+        "CLDR": "pa", 
         "eng": "Panjabi", 
         "iso639-1": "pa"
     }, 
     "pap": {
-        "CLDR": true, 
+        "CLDR": "pap", 
         "eng": "Papiamento"
     }, 
     "pau": {
-        "CLDR": true, 
+        "CLDR": "pau", 
         "eng": "Palauan"
     }, 
     "peo": {
-        "CLDR": true, 
+        "CLDR": "peo", 
         "eng": "Old Persian (ca. 600-400 B.C.)"
     }, 
     "per": {
-        "CLDR": false, 
+        "CLDR": "fa", 
         "eng": "Persian", 
         "iso639-1": "fa"
     }, 
     "phi": {
-        "CLDR": false, 
         "eng": "Philippine languages"
     }, 
     "phn": {
-        "CLDR": true, 
+        "CLDR": "phn", 
         "eng": "Phoenician"
     }, 
     "plf": {
-        "CLDR": false, 
         "eng": "Central Malayo-Polynesian languages"
     }, 
     "pli": {
-        "CLDR": false, 
+        "CLDR": "pi", 
         "eng": "Pali", 
         "iso639-1": "pi"
     }, 
     "pol": {
-        "CLDR": false, 
+        "CLDR": "pl", 
         "eng": "Polish", 
         "iso639-1": "pl"
     }, 
     "pon": {
-        "CLDR": true, 
+        "CLDR": "pon", 
         "eng": "Pohnpeian"
     }, 
     "por": {
-        "CLDR": false, 
+        "CLDR": "pt", 
         "eng": "Portuguese", 
         "iso639-1": "pt"
     }, 
     "poz": {
-        "CLDR": false, 
         "eng": "Malayo-Polynesian languages"
     }, 
     "pqe": {
-        "CLDR": false, 
         "eng": "Eastern Malayo-Polynesian languages"
     }, 
     "pqw": {
-        "CLDR": false, 
         "eng": "Western Malayo-Polynesian languages"
     }, 
     "pra": {
-        "CLDR": false, 
         "eng": "Prakrit languages"
     }, 
     "pro": {
-        "CLDR": true, 
+        "CLDR": "pro", 
         "eng": "Old Proven\u00e7al (to 1500)"
     }, 
     "pus": {
-        "CLDR": false, 
+        "CLDR": "ps", 
         "eng": "Pushto", 
         "iso639-1": "ps"
     }, 
     "qaa-qtz": {
-        "CLDR": false, 
         "eng": "Reserved for local use"
     }, 
     "que": {
-        "CLDR": false, 
+        "CLDR": "qu", 
         "eng": "Quechua", 
         "iso639-1": "qu"
     }, 
     "qwe": {
-        "CLDR": false, 
         "eng": "Quechuan (family)"
     }, 
     "raj": {
-        "CLDR": true, 
+        "CLDR": "raj", 
         "eng": "Rajasthani"
     }, 
     "rap": {
-        "CLDR": true, 
+        "CLDR": "rap", 
         "eng": "Rapanui"
     }, 
     "rar": {
-        "CLDR": true, 
+        "CLDR": "rar", 
         "eng": "Rarotongan"
     }, 
     "roa": {
-        "CLDR": false, 
         "eng": "Romance languages"
     }, 
     "roh": {
-        "CLDR": false, 
+        "CLDR": "rm", 
         "eng": "Romansh", 
         "iso639-1": "rm"
     }, 
     "rom": {
-        "CLDR": true, 
+        "CLDR": "rom", 
         "eng": "Romany"
     }, 
     "rum": {
-        "CLDR": false, 
+        "CLDR": "ro", 
         "eng": "Romanian", 
         "iso639-1": "ro"
     }, 
     "run": {
-        "CLDR": false, 
+        "CLDR": "rn", 
         "eng": "Rundi", 
         "iso639-1": "rn"
     }, 
     "rup": {
-        "CLDR": true, 
+        "CLDR": "rup", 
         "eng": "Macedo-Romanian"
     }, 
     "rus": {
-        "CLDR": false, 
+        "CLDR": "ru", 
         "eng": "Russian", 
         "iso639-1": "ru"
     }, 
     "sad": {
-        "CLDR": true, 
+        "CLDR": "sad", 
         "eng": "Sandawe"
     }, 
     "sag": {
-        "CLDR": false, 
+        "CLDR": "sg", 
         "eng": "Sango", 
         "iso639-1": "sg"
     }, 
     "sah": {
-        "CLDR": true, 
+        "CLDR": "sah", 
         "eng": "Yakut"
     }, 
     "sai": {
-        "CLDR": false, 
         "eng": "South American Indian languages"
     }, 
     "sal": {
-        "CLDR": false, 
         "eng": "Salishan languages"
     }, 
     "sam": {
-        "CLDR": true, 
+        "CLDR": "sam", 
         "eng": "Samaritan Aramaic"
     }, 
     "san": {
-        "CLDR": false, 
+        "CLDR": "sa", 
         "eng": "Sanskrit", 
         "iso639-1": "sa"
     }, 
     "sas": {
-        "CLDR": true, 
+        "CLDR": "sas", 
         "eng": "Sasak"
     }, 
     "sat": {
-        "CLDR": true, 
+        "CLDR": "sat", 
         "eng": "Santali"
     }, 
     "scn": {
-        "CLDR": true, 
+        "CLDR": "scn", 
         "eng": "Sicilian"
     }, 
     "sco": {
-        "CLDR": true, 
+        "CLDR": "sco", 
         "eng": "Scots"
     }, 
     "sdv": {
-        "CLDR": false, 
         "eng": "Eastern Sudanic languages"
     }, 
     "sel": {
-        "CLDR": true, 
+        "CLDR": "sel", 
         "eng": "Selkup"
     }, 
     "sem": {
-        "CLDR": false, 
         "eng": "Semitic languages"
     }, 
     "sga": {
-        "CLDR": true, 
+        "CLDR": "sga", 
         "eng": "Old Irish (to 900)"
     }, 
     "sgn": {
-        "CLDR": false, 
         "eng": "Sign languages"
     }, 
     "shn": {
-        "CLDR": true, 
+        "CLDR": "shn", 
         "eng": "Shan"
     }, 
     "sid": {
-        "CLDR": true, 
+        "CLDR": "sid", 
         "eng": "Sidamo"
     }, 
     "sin": {
-        "CLDR": false, 
+        "CLDR": "si", 
         "eng": "Sinhala", 
         "iso639-1": "si"
     }, 
     "sio": {
-        "CLDR": false, 
         "eng": "Siouan languages"
     }, 
     "sit": {
-        "CLDR": false, 
         "eng": "Sino-Tibetan languages"
     }, 
     "sla": {
-        "CLDR": false, 
         "eng": "Slavic languages"
     }, 
     "slo": {
-        "CLDR": false, 
+        "CLDR": "sk", 
         "eng": "Slovak", 
         "iso639-1": "sk"
     }, 
     "slv": {
-        "CLDR": false, 
+        "CLDR": "sl", 
         "eng": "Slovenian", 
         "iso639-1": "sl"
     }, 
     "sma": {
-        "CLDR": true, 
+        "CLDR": "sma", 
         "eng": "Southern Sami"
     }, 
     "sme": {
-        "CLDR": false, 
+        "CLDR": "se", 
         "eng": "Northern Sami", 
         "iso639-1": "se"
     }, 
     "smi": {
-        "CLDR": false, 
         "eng": "Sami languages"
     }, 
     "smj": {
-        "CLDR": true, 
+        "CLDR": "smj", 
         "eng": "Lule Sami"
     }, 
     "smn": {
-        "CLDR": true, 
+        "CLDR": "smn", 
         "eng": "Inari Sami"
     }, 
     "smo": {
-        "CLDR": false, 
+        "CLDR": "sm", 
         "eng": "Samoan", 
         "iso639-1": "sm"
     }, 
     "sms": {
-        "CLDR": true, 
+        "CLDR": "sms", 
         "eng": "Skolt Sami"
     }, 
     "sna": {
-        "CLDR": false, 
+        "CLDR": "sn", 
         "eng": "Shona", 
         "iso639-1": "sn"
     }, 
     "snd": {
-        "CLDR": false, 
+        "CLDR": "sd", 
         "eng": "Sindhi", 
         "iso639-1": "sd"
     }, 
     "snk": {
-        "CLDR": true, 
+        "CLDR": "snk", 
         "eng": "Soninke"
     }, 
     "sog": {
-        "CLDR": true, 
+        "CLDR": "sog", 
         "eng": "Sogdian"
     }, 
     "som": {
-        "CLDR": false, 
+        "CLDR": "so", 
         "eng": "Somali", 
         "iso639-1": "so"
     }, 
     "son": {
-        "CLDR": false, 
         "eng": "Songhai languages"
     }, 
     "sot": {
-        "CLDR": false, 
+        "CLDR": "st", 
         "eng": "Southern Sotho", 
         "iso639-1": "st"
     }, 
     "spa": {
-        "CLDR": false, 
+        "CLDR": "es", 
         "eng": "Spanish", 
         "iso639-1": "es"
     }, 
     "sqj": {
-        "CLDR": false, 
         "eng": "Albanian languages"
     }, 
     "srd": {
-        "CLDR": false, 
+        "CLDR": "sc", 
         "eng": "Sardinian", 
         "iso639-1": "sc"
     }, 
     "srn": {
-        "CLDR": true, 
+        "CLDR": "srn", 
         "eng": "Sranan Tongo"
     }, 
     "srp": {
-        "CLDR": false, 
+        "CLDR": "sr", 
         "eng": "Serbian", 
         "iso639-1": "sr"
     }, 
     "srr": {
-        "CLDR": true, 
+        "CLDR": "srr", 
         "eng": "Serer"
     }, 
     "ssa": {
-        "CLDR": false, 
         "eng": "Nilo-Saharan languages"
     }, 
     "ssw": {
-        "CLDR": false, 
+        "CLDR": "ss", 
         "eng": "Swati", 
         "iso639-1": "ss"
     }, 
     "suk": {
-        "CLDR": true, 
+        "CLDR": "suk", 
         "eng": "Sukuma"
     }, 
     "sun": {
-        "CLDR": false, 
+        "CLDR": "su", 
         "eng": "Sundanese", 
         "iso639-1": "su"
     }, 
     "sus": {
-        "CLDR": true, 
+        "CLDR": "sus", 
         "eng": "Susu"
     }, 
     "sux": {
-        "CLDR": true, 
+        "CLDR": "sux", 
         "eng": "Sumerian"
     }, 
     "swa": {
-        "CLDR": false, 
+        "CLDR": "sw", 
         "eng": "Swahili (macrolanguage)", 
         "iso639-1": "sw"
     }, 
     "swe": {
-        "CLDR": false, 
+        "CLDR": "sv", 
         "eng": "Swedish", 
         "iso639-1": "sv"
     }, 
     "syc": {
-        "CLDR": true, 
+        "CLDR": "syc", 
         "eng": "Classical Syriac"
     }, 
     "syd": {
-        "CLDR": false, 
         "eng": "Samoyedic languages"
     }, 
     "syr": {
-        "CLDR": true, 
+        "CLDR": "syr", 
         "eng": "Syriac"
     }, 
     "tah": {
-        "CLDR": false, 
+        "CLDR": "ty", 
         "eng": "Tahitian", 
         "iso639-1": "ty"
     }, 
     "tai": {
-        "CLDR": false, 
         "eng": "Tai languages"
     }, 
     "tam": {
-        "CLDR": false, 
+        "CLDR": "ta", 
         "eng": "Tamil", 
         "iso639-1": "ta"
     }, 
     "tat": {
-        "CLDR": false, 
+        "CLDR": "tt", 
         "eng": "Tatar", 
         "iso639-1": "tt"
     }, 
     "tbq": {
-        "CLDR": false, 
         "eng": "Tibeto-Burman languages"
     }, 
     "tel": {
-        "CLDR": false, 
+        "CLDR": "te", 
         "eng": "Telugu", 
         "iso639-1": "te"
     }, 
     "tem": {
-        "CLDR": true, 
+        "CLDR": "tem", 
         "eng": "Timne"
     }, 
     "ter": {
-        "CLDR": true, 
+        "CLDR": "ter", 
         "eng": "Tereno"
     }, 
     "tet": {
-        "CLDR": true, 
+        "CLDR": "tet", 
         "eng": "Tetum"
     }, 
     "tgk": {
-        "CLDR": false, 
+        "CLDR": "tg", 
         "eng": "Tajik", 
         "iso639-1": "tg"
     }, 
     "tgl": {
-        "CLDR": false, 
+        "CLDR": "tl", 
         "eng": "Tagalog", 
         "iso639-1": "tl"
     }, 
     "tha": {
-        "CLDR": false, 
+        "CLDR": "th", 
         "eng": "Thai", 
         "iso639-1": "th"
     }, 
     "tib": {
-        "CLDR": false, 
+        "CLDR": "bo", 
         "eng": "Tibetan", 
         "iso639-1": "bo"
     }, 
     "tig": {
-        "CLDR": true, 
+        "CLDR": "tig", 
         "eng": "Tigre"
     }, 
     "tir": {
-        "CLDR": false, 
+        "CLDR": "ti", 
         "eng": "Tigrinya", 
         "iso639-1": "ti"
     }, 
     "tiv": {
-        "CLDR": true, 
+        "CLDR": "tiv", 
         "eng": "Tiv"
     }, 
     "tkl": {
-        "CLDR": true, 
+        "CLDR": "tkl", 
         "eng": "Tokelau"
     }, 
     "tlh": {
-        "CLDR": true, 
+        "CLDR": "tlh", 
         "eng": "Klingon"
     }, 
     "tli": {
-        "CLDR": true, 
+        "CLDR": "tli", 
         "eng": "Tlingit"
     }, 
     "tmh": {
-        "CLDR": true, 
+        "CLDR": "tmh", 
         "eng": "Tamashek"
     }, 
     "tog": {
-        "CLDR": true, 
+        "CLDR": "tog", 
         "eng": "Tonga (Nyasa)"
     }, 
     "ton": {
-        "CLDR": false, 
+        "CLDR": "to", 
         "eng": "Tonga (Tonga Islands)", 
         "iso639-1": "to"
     }, 
     "tpi": {
-        "CLDR": true, 
+        "CLDR": "tpi", 
         "eng": "Tok Pisin"
     }, 
     "trk": {
-        "CLDR": false, 
         "eng": "Turkic languages"
     }, 
     "tsi": {
-        "CLDR": true, 
+        "CLDR": "tsi", 
         "eng": "Tsimshian"
     }, 
     "tsn": {
-        "CLDR": false, 
+        "CLDR": "tn", 
         "eng": "Tswana", 
         "iso639-1": "tn"
     }, 
     "tso": {
-        "CLDR": false, 
+        "CLDR": "ts", 
         "eng": "Tsonga", 
         "iso639-1": "ts"
     }, 
     "tuk": {
-        "CLDR": false, 
+        "CLDR": "tk", 
         "eng": "Turkmen", 
         "iso639-1": "tk"
     }, 
     "tum": {
-        "CLDR": true, 
+        "CLDR": "tum", 
         "eng": "Tumbuka"
     }, 
     "tup": {
-        "CLDR": false, 
         "eng": "Tupi languages"
     }, 
     "tur": {
-        "CLDR": false, 
+        "CLDR": "tr", 
         "eng": "Turkish", 
         "iso639-1": "tr"
     }, 
     "tut": {
-        "CLDR": false, 
         "eng": "Altaic languages"
     }, 
     "tuw": {
-        "CLDR": false, 
         "eng": "Tungus languages"
     }, 
     "tvl": {
-        "CLDR": true, 
+        "CLDR": "tvl", 
         "eng": "Tuvalu"
     }, 
     "twi": {
-        "CLDR": false, 
+        "CLDR": "tw", 
         "eng": "Twi", 
         "iso639-1": "tw"
     }, 
     "tyv": {
-        "CLDR": true, 
+        "CLDR": "tyv", 
         "eng": "Tuvinian"
     }, 
     "udm": {
-        "CLDR": true, 
+        "CLDR": "udm", 
         "eng": "Udmurt"
     }, 
     "uga": {
-        "CLDR": true, 
+        "CLDR": "uga", 
         "eng": "Ugaritic"
     }, 
     "uig": {
-        "CLDR": false, 
+        "CLDR": "ug", 
         "eng": "Uighur", 
         "iso639-1": "ug"
     }, 
     "ukr": {
-        "CLDR": false, 
+        "CLDR": "uk", 
         "eng": "Ukrainian", 
         "iso639-1": "uk"
     }, 
     "umb": {
-        "CLDR": true, 
+        "CLDR": "umb", 
         "eng": "Umbundu"
     }, 
     "und": {
-        "CLDR": true, 
+        "CLDR": "und", 
         "eng": "Undetermined"
     }, 
     "urd": {
-        "CLDR": false, 
+        "CLDR": "ur", 
         "eng": "Urdu", 
         "iso639-1": "ur"
     }, 
     "urj": {
-        "CLDR": false, 
         "eng": "Uralic languages"
     }, 
     "uzb": {
-        "CLDR": false, 
+        "CLDR": "uz", 
         "eng": "Uzbek", 
         "iso639-1": "uz"
     }, 
     "vai": {
-        "CLDR": true, 
+        "CLDR": "vai", 
         "eng": "Vai"
     }, 
     "ven": {
-        "CLDR": false, 
+        "CLDR": "ve", 
         "eng": "Venda", 
         "iso639-1": "ve"
     }, 
     "vie": {
-        "CLDR": false, 
+        "CLDR": "vi", 
         "eng": "Vietnamese", 
         "iso639-1": "vi"
     }, 
     "vol": {
-        "CLDR": false, 
+        "CLDR": "vo", 
         "eng": "Volap\u00fck", 
         "iso639-1": "vo"
     }, 
     "vot": {
-        "CLDR": true, 
+        "CLDR": "vot", 
         "eng": "Votic"
     }, 
     "wak": {
-        "CLDR": false, 
         "eng": "Wakashan languages"
     }, 
     "wal": {
-        "CLDR": true, 
+        "CLDR": "wal", 
         "eng": "Wolaytta"
     }, 
     "war": {
-        "CLDR": true, 
+        "CLDR": "war", 
         "eng": "Waray (Philippines)"
     }, 
     "was": {
-        "CLDR": true, 
+        "CLDR": "was", 
         "eng": "Washo"
     }, 
     "wel": {
-        "CLDR": false, 
+        "CLDR": "cy", 
         "eng": "Welsh", 
         "iso639-1": "cy"
     }, 
     "wen": {
-        "CLDR": false, 
         "eng": "Sorbian languages"
     }, 
     "wln": {
-        "CLDR": false, 
+        "CLDR": "wa", 
         "eng": "Walloon", 
         "iso639-1": "wa"
     }, 
     "wol": {
-        "CLDR": false, 
+        "CLDR": "wo", 
         "eng": "Wolof", 
         "iso639-1": "wo"
     }, 
     "xal": {
-        "CLDR": true, 
+        "CLDR": "xal", 
         "eng": "Kalmyk"
     }, 
     "xgn": {
-        "CLDR": false, 
         "eng": "Mongolian languages"
     }, 
     "xho": {
-        "CLDR": false, 
+        "CLDR": "xh", 
         "eng": "Xhosa", 
         "iso639-1": "xh"
     }, 
     "xnd": {
-        "CLDR": false, 
         "eng": "Na-Dene languages"
     }, 
     "yao": {
-        "CLDR": true, 
+        "CLDR": "yao", 
         "eng": "Yao"
     }, 
     "yap": {
-        "CLDR": true, 
+        "CLDR": "yap", 
         "eng": "Yapese"
     }, 
     "yid": {
-        "CLDR": false, 
+        "CLDR": "yi", 
         "eng": "Yiddish", 
         "iso639-1": "yi"
     }, 
     "yor": {
-        "CLDR": false, 
+        "CLDR": "yo", 
         "eng": "Yoruba", 
         "iso639-1": "yo"
     }, 
     "ypk": {
-        "CLDR": false, 
         "eng": "Yupik languages"
     }, 
     "zap": {
-        "CLDR": true, 
+        "CLDR": "zap", 
         "eng": "Zapotec"
     }, 
     "zbl": {
-        "CLDR": true, 
+        "CLDR": "zbl", 
         "eng": "Blissymbols"
     }, 
     "zen": {
-        "CLDR": true, 
+        "CLDR": "zen", 
         "eng": "Zenaga"
     }, 
     "zha": {
-        "CLDR": false, 
+        "CLDR": "za", 
         "eng": "Zhuang", 
         "iso639-1": "za"
     }, 
     "zhx": {
-        "CLDR": false, 
         "eng": "Chinese (family)"
     }, 
     "zle": {
-        "CLDR": false, 
         "eng": "East Slavic languages"
     }, 
     "zls": {
-        "CLDR": false, 
         "eng": "South Slavic languages"
     }, 
     "zlw": {
-        "CLDR": false, 
         "eng": "West Slavic languages"
     }, 
     "znd": {
-        "CLDR": false, 
         "eng": "Zande languages"
     }, 
     "zul": {
-        "CLDR": false, 
+        "CLDR": "zu", 
         "eng": "Zulu", 
         "iso639-1": "zu"
     }, 
     "zun": {
-        "CLDR": true, 
+        "CLDR": "zun", 
         "eng": "Zuni"
     }, 
     "zxx": {
-        "CLDR": true, 
+        "CLDR": "zxx", 
         "eng": "No linguistic content"
     }, 
     "zza": {
-        "CLDR": true, 
+        "CLDR": "zza", 
         "eng": "Zaza"
     }
 }
