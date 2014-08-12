@@ -1,1 +1,1 @@
-../LSH/LSH/common.py
+/lokal-profil/LSH/common.py
