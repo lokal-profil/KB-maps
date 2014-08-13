@@ -477,7 +477,7 @@ class KBHarvester(object):
             #GWToolset needs these now
             formated['source'] = '{{Kungliga biblioteket image|libris-id=%s|url=%s}}' %(formated['librisId'], formated['url'])
             formated['institution'] = 'National Library of Sweden'
-            formated['filename'] = u'%s - Kungliga Biblioteket - %s' %(fTitles[0],formated['librisId'])
+            formated['gwtoolset-title'] = u'%s - Kungliga Biblioteket - %s' %(fTitles[0].strip('* '),formated['librisId'])
             
             #store
             self.wikiItems[k] = formated
