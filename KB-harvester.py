@@ -18,25 +18,49 @@ class KBHarvester(object):
         self.url = 'https://data.kb.se/datasets/2014/06/kartor/'
         self.credit = u'Kungliga_Biblioteket'
         self.items = {}
-        f = open('marccountry.json','r')
+        f = codecs.open('marccountry.json','r','utf8')
         self.marccountry = ujson.load(f)
         f.close()
-        f = open('marcrelator.json','r')
+        f = codecs.open('marcrelator.json','r','utf8')
         self.marcrelator = ujson.load(f)
         f.close()
-        f = open('iso6392b.json','r')
+        f = codecs.open('iso6392b.json','r','utf8')
         self.iso6392B = ujson.load(f)
         f.close()
-        f = open('occupation.json','r')
+        f = codecs.open('occupation.json','r','utf8')
         self.occupation = ujson.load(f)
         f.close()
     
-    def scraper(self):
+    def scraper(self, override=False):
+        """
+        @TODO: Add description
+        override: If set to True then this does not take log into account
+        """
         page = requests.get(self.url)
         tree = html.fromstring(page.text)
+        logfile = u'¤KB.log'
         
-        #@TODO
-        #load list of processed id's and last changedate (no need to do those twice)
+        if not override:
+            #load list of all processed id's and last changedate (no need to do those twice)
+            try:
+                flog = codecs.open(logfile,'r','utf8')
+                lines = flog.read().split('\n')
+                flog.close()
+            except IOError as e:
+                if e.errno == 2: #File not found
+                    lines = []
+                else:
+                    raise
+            lastChanged=None
+            oldIds=[]
+            while len(lines) > 0:
+                l = lines.pop()
+                if len(l)==0:continue
+                elif l.startswith('#') and lastChanged is None:
+                    lastChanged = l[1:]
+                else:
+                    oldIds.append(l)
+            oldIds = list(set(oldIds)) #filter potential duplicates
         
         #get changedate
         changeDate = tree.xpath('//span[@property="dateModified"]/text()')[0]
@@ -51,6 +75,26 @@ class KBHarvester(object):
             fileId = fileNames[i].split('_')[0]
             self.items[fileId] = {'filename':fileNames[i], 'url':fileUrls[i], 'librisId':fileId }#, 'fileName':outputName }
         
+        #filter already done ones
+        if not override:
+            if lastChanged == changeDate:
+                print 'No changes since last run, terminating (use override=True to run anyway)'
+                exit(0)
+            else:
+                newIds = [x for x in self.items.keys() if x not in oldIds]
+                for k in self.items.keys():
+                    if not k in newIds:
+                        del self.items[k]
+                if len(self.items) == 0:
+                    print 'No new files in directory, terminating (use override=True to run anyway)'
+                    exit(0)
+        
+        #output list of id's + changeDate to log
+        flog = codecs.open(logfile,'a','utf8')
+        flog.write(u'#%s\n' %changeDate)
+        flog.write(u'%s\n' %'\n'.join(self.items.keys()))
+        flog.close()
+        
         #Output any troubles
         for k,v in self.items.iteritems():
             troubles = self.getMetadata(k)
@@ -59,13 +103,13 @@ class KBHarvester(object):
                 for t in troubles:
                     print u'  %s' %t
         
-        #@TODO
-        #output list of id's + changeDate to log
+        #various outputting
         self.prepareForWiki() #puts formated values in self.wikiItems
         #output to xml for GWtoolset
+        outputXML(self.wikiItems, 'records.xml')
         #output to csv, for overview
-        tmpPrint(self.items, 'scrape.csv')
-        tmpPrint(self.wikiItems, 'wiki.csv')
+        csvPrint(self.items, 'scrape.csv')
+        csvPrint(self.wikiItems, 'wiki.csv')
     
     def getMetadata(self, librisId):
         """retrieve metadata from libris, parse it and add to items"""
@@ -426,10 +470,16 @@ class KBHarvester(object):
             if len(v['descriptions']['notes'])>1:
                 formated['notes'] = u'\n* '.join(v['descriptions']['notes'])
             
-            #store
-            formated['filename'] = v['filename']
-            formated['url'] = v['url']
+            #unformated
+            formated['url'] = u'https://data.kb.se%s' %v['url']
             formated['librisId'] = v['librisId']
+            
+            #GWToolset needs these now
+            formated['source'] = '{{Kungliga biblioteket image|libris-id=%s|url=%s}}' %(formated['librisId'], formated['url'])
+            formated['institution'] = 'National Library of Sweden'
+            formated['filename'] = u'%s - Kungliga Biblioteket - %s' %(fTitles[0],formated['librisId'])
+            
+            #store
             self.wikiItems[k] = formated
     
     def formatScale(self, v, scale):
@@ -532,9 +582,29 @@ class KBHarvester(object):
                 return u'{{#language:%s}}' %self.iso6392B[code]['iso639-1']
         else:
             return u"{{en|%s}}" %self.iso6392B[code]['en']
-    
-#temp
-def tmpPrint(items, outfile):
+
+def outputXML(records, outfile):
+        '''output the data as xml acording to the desired format'''
+        f=codecs.open(outfile,'w','utf-8')
+        f.write(u"<?xml version='1.0' encoding='UTF-8'?>\n") #proper declaration does not play nice with unicode
+        
+        root = etree.Element('metadata')
+        for k, v in records.iteritems():
+            record = etree.Element('record')
+            
+            for kk, vv in v.iteritems():
+                child = etree.Element(kk)
+                child.text = vv
+                record.append(child)
+            root.append(record)
+            
+        #end of single root-element
+        f.write(etree.tostring(root, pretty_print=True, encoding='unicode'))
+        
+        #end of all dc-elements
+        f.close()
+
+def csvPrint(items, outfile):
     """
     Quick and dirty output to csv
     """
@@ -574,7 +644,20 @@ def tmpPrint(items, outfile):
     f.close()
 
 if __name__ == '__main__':
+    import sys
     usage = """@TODO: Add usage instructions"""
+    argv = sys.argv[1:]
     A = KBHarvester()
-    A.scraper()
+    if len(argv) == 0:
+        A.scraper()
+    elif len(argv) == 1:
+        if argv[0].lower in ['true', 't']:
+            A.scraper(override=True)
+        elif argv[0].lower() in ['false', 'f']:
+            A.scraper(override=False)
+        else:
+            print """The only allowed parameter is that for override 
+            with a value of 'True/T' or 'False/F'"""
+    else:
+        print "Only 0 or 1 (for override) parameters allowed"
 #EoF
